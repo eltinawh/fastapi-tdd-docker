@@ -9,6 +9,7 @@ from app.models.tortoise import TextSummary
 
 logger = logging.getLogger("uvicorn")
 
+
 async def post(payload: SummaryPayloadSchema) -> int:
     summary = TextSummary(
         url=payload.url,
