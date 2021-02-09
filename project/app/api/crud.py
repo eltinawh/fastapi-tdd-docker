@@ -6,7 +6,6 @@ from typing import List, Union
 
 from app.models.pydantic import SummaryPayloadSchema
 from app.models.tortoise import TextSummary
-from app.summarizer import generate_summary
 
 logger = logging.getLogger("uvicorn")
 
